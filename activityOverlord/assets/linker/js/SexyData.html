@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/# -->
+<html ng-app="AppRecommender" class="ng-scope"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style>
+  <script type="text/javascript">
+    WEB_SOCKET_SWF_LOCATION = "/__rack/WebSocketMain.swf";
+    
+  </script>
+  <script type="text/javascript" src="./SexyData_files/swfobject.js"></script><style type="text/css"></style>
+  <script type="text/javascript" src="./SexyData_files/web_socket.js"></script>
+
+<script type="text/javascript">
+  RACK_LIVERELOAD_PORT = 35729;
+</script>
+<script type="text/javascript" src="./SexyData_files/livereload.js"></script>
+
+
+  <title>SexyData</title>
+  <link href="http://localhost:3000/assets/application.css?body=1" media="all" rel="stylesheet">
+<link href="http://localhost:3000/assets/reset.css?body=1" media="all" rel="stylesheet">
+<link href="http://localhost:3000/assets/style.css?body=1" media="all" rel="stylesheet">
+  <link href="http://localhost:3000/assets/main.css?body=1" media="all" rel="stylesheet">
+  <script src="./SexyData_files/jquery.js"></script>
+<script src="./SexyData_files/jquery_ujs.js"></script>
+<script src="./SexyData_files/angular.js"></script>
+<script src="./SexyData_files/angular-resource.js"></script>
+<script src="./SexyData_files/main.js"></script>
+<script src="./SexyData_files/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="s5gEdEjAHY2qXcQS76SHbI+PsNCV16rWc5H1dGY8v6I=" name="csrf-token">
+</head>
+<body style="">
+
+<h1>Main#index</h1>
+<p>Select an image</p>
+
+<div data-images="[{&quot;id&quot;:1,&quot;name&quot;:&quot;Cooking&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png&quot;},&quot;alt_name&quot;:&quot;Cooking&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:16.033Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:16.033Z&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Design&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png&quot;},&quot;alt_name&quot;:&quot;Design&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:16.860Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:16.860Z&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Exercise&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png&quot;},&quot;alt_name&quot;:&quot;Exercise&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:17.154Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:17.154Z&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;FamilyHol&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png&quot;},&quot;alt_name&quot;:&quot;FamilyHol&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:17.432Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:17.432Z&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Fashion&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png&quot;},&quot;alt_name&quot;:&quot;Fashion&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:17.729Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:17.729Z&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Finance&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png&quot;},&quot;alt_name&quot;:&quot;Finance&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:18.054Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:18.054Z&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Games&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png&quot;},&quot;alt_name&quot;:&quot;Games&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:18.335Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:18.335Z&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;GPS&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png&quot;},&quot;alt_name&quot;:&quot;GPS&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:18.610Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:18.610Z&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;Kids&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png&quot;},&quot;alt_name&quot;:&quot;Kids&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:18.875Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:18.875Z&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;Lifestyle&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png&quot;},&quot;alt_name&quot;:&quot;Lifestyle&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:19.219Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:19.219Z&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;Music&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png&quot;},&quot;alt_name&quot;:&quot;Music&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:19.579Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:19.579Z&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;Shopping&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png&quot;},&quot;alt_name&quot;:&quot;Shopping&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:19.883Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:19.883Z&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;Social&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png&quot;},&quot;alt_name&quot;:&quot;Social&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:20.188Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:20.188Z&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sport&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png&quot;},&quot;alt_name&quot;:&quot;Sport&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:20.479Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:20.479Z&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;Streaming&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png&quot;},&quot;alt_name&quot;:&quot;Streaming&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:20.828Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:20.828Z&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;Travel&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png&quot;},&quot;alt_name&quot;:&quot;Travel&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:21.119Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:21.119Z&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;VideoCall&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png&quot;},&quot;alt_name&quot;:&quot;VideoCall&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:41:21.490Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:41:21.490Z&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Cooking&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png&quot;},&quot;alt_name&quot;:&quot;Cooking&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:08.487Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:08.487Z&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;Design&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png&quot;},&quot;alt_name&quot;:&quot;Design&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:08.979Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:08.979Z&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;Exercise&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png&quot;},&quot;alt_name&quot;:&quot;Exercise&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:09.378Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:09.378Z&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;FamilyHol&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png&quot;},&quot;alt_name&quot;:&quot;FamilyHol&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:09.683Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:09.683Z&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;Fashion&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png&quot;},&quot;alt_name&quot;:&quot;Fashion&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:10.008Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:10.008Z&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;Finance&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png&quot;},&quot;alt_name&quot;:&quot;Finance&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:10.336Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:10.336Z&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;Games&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png&quot;},&quot;alt_name&quot;:&quot;Games&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:10.593Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:10.593Z&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;GPS&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png&quot;},&quot;alt_name&quot;:&quot;GPS&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:10.863Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:10.863Z&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;Kids&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png&quot;},&quot;alt_name&quot;:&quot;Kids&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:11.134Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:11.134Z&quot;},{&quot;id&quot;:27,&quot;name&quot;:&quot;Lifestyle&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png&quot;},&quot;alt_name&quot;:&quot;Lifestyle&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:11.597Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:11.597Z&quot;},{&quot;id&quot;:28,&quot;name&quot;:&quot;Music&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png&quot;},&quot;alt_name&quot;:&quot;Music&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:12.055Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:12.055Z&quot;},{&quot;id&quot;:29,&quot;name&quot;:&quot;Shopping&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png&quot;},&quot;alt_name&quot;:&quot;Shopping&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:12.353Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:12.353Z&quot;},{&quot;id&quot;:30,&quot;name&quot;:&quot;Social&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png&quot;},&quot;alt_name&quot;:&quot;Social&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:12.809Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:12.809Z&quot;},{&quot;id&quot;:31,&quot;name&quot;:&quot;Sport&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png&quot;},&quot;alt_name&quot;:&quot;Sport&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:13.113Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:13.113Z&quot;},{&quot;id&quot;:32,&quot;name&quot;:&quot;Streaming&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png&quot;},&quot;alt_name&quot;:&quot;Streaming&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:13.486Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:13.486Z&quot;},{&quot;id&quot;:33,&quot;name&quot;:&quot;Travel&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png&quot;},&quot;alt_name&quot;:&quot;Travel&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:13.870Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:13.870Z&quot;},{&quot;id&quot;:34,&quot;name&quot;:&quot;VideoCall&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png&quot;},&quot;alt_name&quot;:&quot;VideoCall&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:42:14.171Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:14.171Z&quot;},{&quot;id&quot;:35,&quot;name&quot;:&quot;Cooking&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png&quot;},&quot;alt_name&quot;:&quot;Cooking&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:09.778Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:09.778Z&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;Design&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png&quot;},&quot;alt_name&quot;:&quot;Design&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:10.664Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:10.664Z&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;Exercise&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png&quot;},&quot;alt_name&quot;:&quot;Exercise&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:10.988Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:10.988Z&quot;},{&quot;id&quot;:38,&quot;name&quot;:&quot;FamilyHol&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png&quot;},&quot;alt_name&quot;:&quot;FamilyHol&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:11.274Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:11.274Z&quot;},{&quot;id&quot;:39,&quot;name&quot;:&quot;Fashion&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png&quot;},&quot;alt_name&quot;:&quot;Fashion&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:11.536Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:11.536Z&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Finance&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png&quot;},&quot;alt_name&quot;:&quot;Finance&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:11.884Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:11.884Z&quot;},{&quot;id&quot;:41,&quot;name&quot;:&quot;Games&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png&quot;},&quot;alt_name&quot;:&quot;Games&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:12.167Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:12.167Z&quot;},{&quot;id&quot;:42,&quot;name&quot;:&quot;GPS&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png&quot;},&quot;alt_name&quot;:&quot;GPS&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:12.444Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:12.444Z&quot;},{&quot;id&quot;:43,&quot;name&quot;:&quot;Kids&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png&quot;},&quot;alt_name&quot;:&quot;Kids&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:12.733Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:12.733Z&quot;},{&quot;id&quot;:44,&quot;name&quot;:&quot;Lifestyle&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png&quot;},&quot;alt_name&quot;:&quot;Lifestyle&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:13.089Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:13.089Z&quot;},{&quot;id&quot;:45,&quot;name&quot;:&quot;Music&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png&quot;},&quot;alt_name&quot;:&quot;Music&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:13.461Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:13.461Z&quot;},{&quot;id&quot;:46,&quot;name&quot;:&quot;Shopping&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png&quot;},&quot;alt_name&quot;:&quot;Shopping&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:13.770Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:13.770Z&quot;},{&quot;id&quot;:47,&quot;name&quot;:&quot;Social&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png&quot;},&quot;alt_name&quot;:&quot;Social&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:14.056Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:14.056Z&quot;},{&quot;id&quot;:48,&quot;name&quot;:&quot;Sport&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png&quot;},&quot;alt_name&quot;:&quot;Sport&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:14.373Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:14.373Z&quot;},{&quot;id&quot;:49,&quot;name&quot;:&quot;Streaming&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png&quot;},&quot;alt_name&quot;:&quot;Streaming&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:14.718Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:14.718Z&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;Travel&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png&quot;},&quot;alt_name&quot;:&quot;Travel&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:15.013Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:15.013Z&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;VideoCall&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png&quot;},&quot;alt_name&quot;:&quot;VideoCall&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:15.336Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:15.336Z&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;Cooking&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png&quot;},&quot;alt_name&quot;:&quot;Cooking&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:35.136Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:35.136Z&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Design&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png&quot;},&quot;alt_name&quot;:&quot;Design&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:35.601Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:35.601Z&quot;},{&quot;id&quot;:54,&quot;name&quot;:&quot;Exercise&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png&quot;},&quot;alt_name&quot;:&quot;Exercise&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:35.939Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:35.939Z&quot;},{&quot;id&quot;:55,&quot;name&quot;:&quot;FamilyHol&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png&quot;},&quot;alt_name&quot;:&quot;FamilyHol&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:36.283Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:36.283Z&quot;},{&quot;id&quot;:56,&quot;name&quot;:&quot;Fashion&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png&quot;},&quot;alt_name&quot;:&quot;Fashion&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:36.559Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:36.559Z&quot;},{&quot;id&quot;:57,&quot;name&quot;:&quot;Finance&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png&quot;},&quot;alt_name&quot;:&quot;Finance&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:36.898Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:36.898Z&quot;},{&quot;id&quot;:58,&quot;name&quot;:&quot;Games&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png&quot;},&quot;alt_name&quot;:&quot;Games&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:37.190Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:37.190Z&quot;},{&quot;id&quot;:59,&quot;name&quot;:&quot;GPS&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png&quot;},&quot;alt_name&quot;:&quot;GPS&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:37.500Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:37.500Z&quot;},{&quot;id&quot;:60,&quot;name&quot;:&quot;Kids&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png&quot;},&quot;alt_name&quot;:&quot;Kids&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:37.779Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:37.779Z&quot;},{&quot;id&quot;:61,&quot;name&quot;:&quot;Lifestyle&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png&quot;},&quot;alt_name&quot;:&quot;Lifestyle&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:38.128Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:38.128Z&quot;},{&quot;id&quot;:62,&quot;name&quot;:&quot;Music&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png&quot;},&quot;alt_name&quot;:&quot;Music&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:38.434Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:38.434Z&quot;},{&quot;id&quot;:63,&quot;name&quot;:&quot;Shopping&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png&quot;},&quot;alt_name&quot;:&quot;Shopping&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:38.717Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:38.717Z&quot;},{&quot;id&quot;:64,&quot;name&quot;:&quot;Social&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png&quot;},&quot;alt_name&quot;:&quot;Social&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:39.087Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:39.087Z&quot;},{&quot;id&quot;:65,&quot;name&quot;:&quot;Sport&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png&quot;},&quot;alt_name&quot;:&quot;Sport&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:39.436Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:39.436Z&quot;},{&quot;id&quot;:66,&quot;name&quot;:&quot;Streaming&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png&quot;},&quot;alt_name&quot;:&quot;Streaming&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:39.703Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:39.703Z&quot;},{&quot;id&quot;:67,&quot;name&quot;:&quot;Travel&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png&quot;},&quot;alt_name&quot;:&quot;Travel&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:40.020Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:40.020Z&quot;},{&quot;id&quot;:68,&quot;name&quot;:&quot;VideoCall&quot;,&quot;image&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png&quot;},&quot;alt_name&quot;:&quot;VideoCall&quot;,&quot;visitor_id&quot;:null,&quot;created_at&quot;:&quot;2014-02-24T16:48:40.339Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:40.339Z&quot;}]" id="images"></div>
+<div data-mobile-apps="{&quot;1&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;BigOven&quot;,&quot;description&quot;:&quot;BigOven: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/BigOven-Cooking.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:1,&quot;created_at&quot;:&quot;2014-02-24T16:42:14.548Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:14.548Z&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;BigOven&quot;,&quot;description&quot;:&quot;BigOven: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/BigOven-Cooking.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:1,&quot;created_at&quot;:&quot;2014-02-24T16:48:40.714Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:40.714Z&quot;}],&quot;14&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;Bleacher&quot;,&quot;description&quot;:&quot;Bleacher: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Bleacher-Sport.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:14,&quot;created_at&quot;:&quot;2014-02-24T16:42:14.761Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:14.761Z&quot;},{&quot;id&quot;:19,&quot;name&quot;:&quot;Bleacher&quot;,&quot;description&quot;:&quot;Bleacher: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Bleacher-Sport.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:14,&quot;created_at&quot;:&quot;2014-02-24T16:48:40.871Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:40.871Z&quot;}],&quot;11&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;BlinkBox&quot;,&quot;description&quot;:&quot;BlinkBox: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/BlinkBox-Music.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:11,&quot;created_at&quot;:&quot;2014-02-24T16:42:14.944Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:14.944Z&quot;},{&quot;id&quot;:20,&quot;name&quot;:&quot;BlinkBox&quot;,&quot;description&quot;:&quot;BlinkBox: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/BlinkBox-Music.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:11,&quot;created_at&quot;:&quot;2014-02-24T16:48:41.029Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:41.029Z&quot;}],&quot;7&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;CrazyBricks&quot;,&quot;description&quot;:&quot;CrazyBricks: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/CrazyBricks-Games.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:7,&quot;created_at&quot;:&quot;2014-02-24T16:42:15.160Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:15.160Z&quot;},{&quot;id&quot;:21,&quot;name&quot;:&quot;CrazyBricks&quot;,&quot;description&quot;:&quot;CrazyBricks: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/CrazyBricks-Games.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:7,&quot;created_at&quot;:&quot;2014-02-24T16:48:41.177Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:41.177Z&quot;}],&quot;13&quot;:[{&quot;id&quot;:5,&quot;name&quot;:&quot;Facebook&quot;,&quot;description&quot;:&quot;Facebook: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Facebook-Social.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:13,&quot;created_at&quot;:&quot;2014-02-24T16:42:15.379Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:15.379Z&quot;},{&quot;id&quot;:22,&quot;name&quot;:&quot;Facebook&quot;,&quot;description&quot;:&quot;Facebook: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Facebook-Social.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:13,&quot;created_at&quot;:&quot;2014-02-24T16:48:41.382Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:41.382Z&quot;}],&quot;2&quot;:[{&quot;id&quot;:6,&quot;name&quot;:&quot;Fancy&quot;,&quot;description&quot;:&quot;Fancy: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Fancy-Design.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:2,&quot;created_at&quot;:&quot;2014-02-24T16:42:15.574Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:15.574Z&quot;},{&quot;id&quot;:23,&quot;name&quot;:&quot;Fancy&quot;,&quot;description&quot;:&quot;Fancy: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Fancy-Design.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:2,&quot;created_at&quot;:&quot;2014-02-24T16:48:41.579Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:41.579Z&quot;}],&quot;10&quot;:[{&quot;id&quot;:7,&quot;name&quot;:&quot;Flipboard&quot;,&quot;description&quot;:&quot;Flipboard: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Flipboard-Lifestyle.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:10,&quot;created_at&quot;:&quot;2014-02-24T16:42:15.745Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:15.745Z&quot;},{&quot;id&quot;:24,&quot;name&quot;:&quot;Flipboard&quot;,&quot;description&quot;:&quot;Flipboard: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Flipboard-Lifestyle.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:10,&quot;created_at&quot;:&quot;2014-02-24T16:48:41.756Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:41.756Z&quot;}],&quot;8&quot;:[{&quot;id&quot;:8,&quot;name&quot;:&quot;GoogleMaps&quot;,&quot;description&quot;:&quot;GoogleMaps: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GoogleMaps-GPS.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:8,&quot;created_at&quot;:&quot;2014-02-24T16:42:15.939Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:15.939Z&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;GoogleMaps&quot;,&quot;description&quot;:&quot;GoogleMaps: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/GoogleMaps-GPS.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:8,&quot;created_at&quot;:&quot;2014-02-24T16:48:41.951Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:41.951Z&quot;}],&quot;9&quot;:[{&quot;id&quot;:9,&quot;name&quot;:&quot;Lego&quot;,&quot;description&quot;:&quot;Lego: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Lego-Kids.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:9,&quot;created_at&quot;:&quot;2014-02-24T16:42:16.177Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:16.177Z&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;Lego&quot;,&quot;description&quot;:&quot;Lego: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Lego-Kids.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:9,&quot;created_at&quot;:&quot;2014-02-24T16:48:42.159Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:42.159Z&quot;}],&quot;6&quot;:[{&quot;id&quot;:10,&quot;name&quot;:&quot;MoneyLover&quot;,&quot;description&quot;:&quot;MoneyLover: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MoneyLover-Finance.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:6,&quot;created_at&quot;:&quot;2014-02-24T16:42:16.425Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:16.425Z&quot;},{&quot;id&quot;:27,&quot;name&quot;:&quot;MoneyLover&quot;,&quot;description&quot;:&quot;MoneyLover: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MoneyLover-Finance.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:6,&quot;created_at&quot;:&quot;2014-02-24T16:48:42.397Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:42.397Z&quot;}],&quot;3&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;MyFitness&quot;,&quot;description&quot;:&quot;MyFitness: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MyFitness-Exercise.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:3,&quot;created_at&quot;:&quot;2014-02-24T16:42:16.607Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:16.607Z&quot;},{&quot;id&quot;:28,&quot;name&quot;:&quot;MyFitness&quot;,&quot;description&quot;:&quot;MyFitness: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/MyFitness-Exercise.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:3,&quot;created_at&quot;:&quot;2014-02-24T16:48:42.607Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:42.607Z&quot;}],&quot;17&quot;:[{&quot;id&quot;:12,&quot;name&quot;:&quot;Skype&quot;,&quot;description&quot;:&quot;Skype: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Skype-VideoCall.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:17,&quot;created_at&quot;:&quot;2014-02-24T16:42:16.856Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:16.856Z&quot;},{&quot;id&quot;:29,&quot;name&quot;:&quot;Skype&quot;,&quot;description&quot;:&quot;Skype: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Skype-VideoCall.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:17,&quot;created_at&quot;:&quot;2014-02-24T16:48:42.804Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:42.804Z&quot;}],&quot;12&quot;:[{&quot;id&quot;:13,&quot;name&quot;:&quot;Snapette&quot;,&quot;description&quot;:&quot;Snapette: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Snapette-Shopping.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:12,&quot;created_at&quot;:&quot;2014-02-24T16:42:17.034Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:17.034Z&quot;},{&quot;id&quot;:30,&quot;name&quot;:&quot;Snapette&quot;,&quot;description&quot;:&quot;Snapette: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Snapette-Shopping.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:12,&quot;created_at&quot;:&quot;2014-02-24T16:48:42.942Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:42.942Z&quot;}],&quot;5&quot;:[{&quot;id&quot;:14,&quot;name&quot;:&quot;Vogue&quot;,&quot;description&quot;:&quot;Vogue: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Vogue-Fashion.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:5,&quot;created_at&quot;:&quot;2014-02-24T16:42:17.278Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:17.278Z&quot;},{&quot;id&quot;:31,&quot;name&quot;:&quot;Vogue&quot;,&quot;description&quot;:&quot;Vogue: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Vogue-Fashion.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:5,&quot;created_at&quot;:&quot;2014-02-24T16:48:43.172Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:43.172Z&quot;}],&quot;4&quot;:[{&quot;id&quot;:15,&quot;name&quot;:&quot;WorldTravel&quot;,&quot;description&quot;:&quot;WorldTravel: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/WorldTravel-FamilyHol.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:4,&quot;created_at&quot;:&quot;2014-02-24T16:42:17.454Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:17.454Z&quot;},{&quot;id&quot;:32,&quot;name&quot;:&quot;WorldTravel&quot;,&quot;description&quot;:&quot;WorldTravel: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/WorldTravel-FamilyHol.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:4,&quot;created_at&quot;:&quot;2014-02-24T16:48:43.330Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:43.330Z&quot;}],&quot;16&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;WorldTravel&quot;,&quot;description&quot;:&quot;WorldTravel: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/WorldTravel-Travel.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:16,&quot;created_at&quot;:&quot;2014-02-24T16:42:17.697Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:17.697Z&quot;},{&quot;id&quot;:33,&quot;name&quot;:&quot;WorldTravel&quot;,&quot;description&quot;:&quot;WorldTravel: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/WorldTravel-Travel.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:16,&quot;created_at&quot;:&quot;2014-02-24T16:48:43.530Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:43.530Z&quot;}],&quot;15&quot;:[{&quot;id&quot;:17,&quot;name&quot;:&quot;Youtube&quot;,&quot;description&quot;:&quot;Youtube: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Youtube-Streaming.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:15,&quot;created_at&quot;:&quot;2014-02-24T16:42:17.887Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:42:17.887Z&quot;},{&quot;id&quot;:34,&quot;name&quot;:&quot;Youtube&quot;,&quot;description&quot;:&quot;Youtube: Lorem ipsum ut endim bosach alem&quot;,&quot;thumb&quot;:{&quot;url&quot;:&quot;https://making-data-sexy.s3.amazonaws.com/visions/Youtube-Streaming.png&quot;},&quot;data_amount&quot;:10,&quot;rating_official&quot;:3,&quot;image_id&quot;:15,&quot;created_at&quot;:&quot;2014-02-24T16:48:43.703Z&quot;,&quot;updated_at&quot;:&quot;2014-02-24T16:48:43.703Z&quot;}]}" id="mobile_apps"></div>
+
+<div ng-controller="ImageCtrl" class="ng-scope">
+
+
+<!--   <section class="wrapper">
+  <div class="centering-child" id="image-grid">
+    <a ng-repeat="image in images" href='#'>
+      <img ng-src="{{ image.image.url }}" ng-click="swap()" ng-class="class" alt='{{ image.name }}' />
+    </a>
+  </div>
+  </section>
+
+  <div id="gutter">
+    <a ng-repeat="image in images" href='#'>
+      <img ng-src="{{ image.image.url }}" ng-click="swap()" ng-class="gutter-images" alt='{{ image.name }}' id='{{ image.name }}'/>
+    </a>
+  </div> -->
+  <!--Main Menu which will show users progress-->
+
+
+  <header class="main-menu">
+    <ul>
+      <li>Cooking</li>
+      <li>Exercise</li>
+      <li>Sport</li>
+      <li>Music</li>
+      <li>Video</li>
+    </ul>
+  </header>
+  <!-- Main carousel of images to display aspirational images-->
+  <section class="inspire-reel">
+    <img src="./SexyData_files/1280x480">
+  </section>
+  <!-- App menu to display a list of apps linked to the aspirational image selected-->
+  <section class="app-grid">
+    <ul>
+      
+      <!-- ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope">
+        <img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png">
+        <div class="app-comment">
+          <h3>Title1</h3>
+          <p>11 words/85 characters will fit in this space at 12pt font-size for Frutiger 55 Roman</p>
+        </div>
+      </li><!-- end ngRepeat: image in images -->
+      
+    </ul>
+  </section>
+  <!-- Spacer to compensate for fixed footer space -->
+  <div class="footer-spacer">
+    &nbsp;
+  </div>
+  <!-- A gutter to display the apps which the user has selected so far -->
+  <footer class="gutter">
+    <ul>
+      <!-- ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/CookingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Cooking" id="Cooking" src="./SexyData_files/CookingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/DesignImage.png" ng-click="swap()" ng-class="gutter-images" alt="Design" id="Design" src="./SexyData_files/DesignImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ExerciseImage.png" ng-click="swap()" ng-class="gutter-images" alt="Exercise" id="Exercise" src="./SexyData_files/ExerciseImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FamilyHolImage.png" ng-click="swap()" ng-class="gutter-images" alt="FamilyHol" id="FamilyHol" src="./SexyData_files/FamilyHolImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FashionImage.png" ng-click="swap()" ng-class="gutter-images" alt="Fashion" id="Fashion" src="./SexyData_files/FashionImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/FinanceImage.png" ng-click="swap()" ng-class="gutter-images" alt="Finance" id="Finance" src="./SexyData_files/FinanceImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GamesImage.png" ng-click="swap()" ng-class="gutter-images" alt="Games" id="Games" src="./SexyData_files/GamesImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/GPSImage.png" ng-click="swap()" ng-class="gutter-images" alt="GPS" id="GPS" src="./SexyData_files/GPSImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/KidsImage.png" ng-click="swap()" ng-class="gutter-images" alt="Kids" id="Kids" src="./SexyData_files/KidsImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/LifestyleImage.png" ng-click="swap()" ng-class="gutter-images" alt="Lifestyle" id="Lifestyle" src="./SexyData_files/LifestyleImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/MusicImage.png" ng-click="swap()" ng-class="gutter-images" alt="Music" id="Music" src="./SexyData_files/MusicImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/ShoppingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Shopping" id="Shopping" src="./SexyData_files/ShoppingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SocialImage.png" ng-click="swap()" ng-class="gutter-images" alt="Social" id="Social" src="./SexyData_files/SocialImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/SportImage.png" ng-click="swap()" ng-class="gutter-images" alt="Sport" id="Sport" src="./SexyData_files/SportImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/StreamingImage.png" ng-click="swap()" ng-class="gutter-images" alt="Streaming" id="Streaming" src="./SexyData_files/StreamingImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/TravelImage.png" ng-click="swap()" ng-class="gutter-images" alt="Travel" id="Travel" src="./SexyData_files/TravelImage.png"></li><!-- end ngRepeat: image in images --><li ng-repeat="image in images" class="ng-scope"><img ng-src="https://making-data-sexy.s3.amazonaws.com/visions/VideoCallImage.png" ng-click="swap()" ng-class="gutter-images" alt="VideoCall" id="VideoCall" src="./SexyData_files/VideoCallImage.png"></li><!-- end ngRepeat: image in images -->
+    </ul>
+    <button>
+      SUBMIT
+    </button>
+  </footer>
+</div>
+
+
+
+</body></html>
