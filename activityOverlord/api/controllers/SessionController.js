@@ -8,7 +8,7 @@
   var bcrypt = require('bcrypt');
 
 module.exports = {
-  
+
   'new': function(req, res) {
 
     res.view('session/new');
@@ -18,7 +18,7 @@ module.exports = {
 
     //check for email and passsword in params sent via the form, if none
     //redirect the browser back to the sign-in form
-    if (!req.param('email') || !req.param('passsword')) {
+    if (!req.param('email') || !req.param('password')) {
       //return next({err: ["Password doesn't match the confirmation"]});
 
       var usernamePasswordRequiredError = [{name: 'usernamePasswordRequiredError', message: 'You must enter both a username and password'}]
