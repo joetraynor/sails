@@ -22,19 +22,23 @@ module.exports = {
   },
 
   create: function (req, res, next) {
+
     //Create a user with the params sent from the sign up form in new.ejs
     User.create( req.params.all(), function userCreated (err, user) {
 
       //if theres an error
       if (err) {
-        console.log(err);
         req.session.flash = {
         err: err
       }
+
         //if error then redirect back to sign up page
         return res.redirect('/user/new');
-
       }
+
+      //log in user
+      req.session.authenticated = true;
+      req.session.User = user;
 
       //after creating a user, redirect to show action
       // res.json(user);
@@ -89,13 +93,13 @@ module.exports = {
         return res.redirect('/user/edit/' + req.param('id'));
       }
 
-      res.redirect('/user/show/' + req.param('id')); 
+      res.redirect('/user/show/' + req.param('id'));
     });
   },
 
   //delete a user
   destroy: function (req, res, next) {
-      
+
       User.findOne(req.param('id'), function (err, user) {
         if (err) return next(err);
 
